@@ -1,5 +1,5 @@
 echo "Installing spotipy library:"
-pip install spotipy==2.23.0
+pip3 install spotipy==2.23.0
 
 echo "Enter your Spotify Client ID:"
 read spotify_client_id
@@ -16,7 +16,7 @@ export SPOTIPY_REDIRECT_URI=$spotify_redirect_uri
 echo "Enter your spotify username:"
 read spotify_username
 
-python python/generateToken.py $spotify_username
+python3 python/generateToken.py $spotify_username
 
 echo
 echo "###### Spotify Token Created ######"
